@@ -2,6 +2,24 @@
 
 Este repositório documenta minha experiência prática com a criação e configuração de máquinas virtuais (VMs) na plataforma de nuvem Microsoft Azure. O objetivo é compartilhar o passo a passo, aprendizados, dicas e capturas de tela do processo.
 
+## 🗂️ Índice
+
+- [🎯 Objetivo](#-objetivo)  
+- [🧱 Etapas Realizadas](#-etapas-realizadas)  
+  - [1. Acesso ao Portal](#1-acesso-ao-portal)  
+  - [2. Criação da Máquina Virtual](#2-criação-da-máquina-virtual)  
+  - [3. Configurações de Rede](#3-configurações-de-rede)  
+- [📸 Capturas de Tela](#-capturas-de-tela)  
+  - [`/images/vm-criacao/`](#imagesvm-criacao)  
+  - [`/images/vm-parada/`](#imagesvm-parada)  
+- [💡 Minhas Anotações e Dicas](#-minhas-anotações-e-dicas)  
+  - [🔧 Configurações](#-configurações)  
+  - [🔐 Segurança](#-segurança)  
+  - [💸 Custo](#-custo)  
+- [🔗 Recursos que Utilizei](#-recursos-que-utilizei)  
+- [✅ Conclusão](#-conclusão)  
+- [🔗 Link do Repositório](#-link-do-repositório)
+
 ---
 
 ## 🎯 Objetivo
@@ -15,20 +33,20 @@ Este repositório documenta minha experiência prática com a criação e config
 ## 🧱 Etapas Realizadas
 
 ### 1. Acesso ao Portal
-Acesse o [portal do Azure](https://portal.azure.com) e, após fazer login, inicie o processo de criação da VM clicando em **"Criar um recurso" > "Máquina Virtual"**.
+Acessei o [portal do Azure](https://portal.azure.com) e, após fazer login, iniciei o processo de criação da VM clicando em **"Criar um recurso" > "Máquina Virtual"**.
 
 ### 2. Criação da Máquina Virtual
 Durante o processo, configurei os seguintes parâmetros:
 
 - **Grupo de Recursos:** criei um novo para organização  
-- **Nome da VM:** `laboratorio-minhaVM`  
-- **Região:** selecionei `Brasil Sul`  
-- **Imagem:** optei por `Windows Server (Edição Datacenter Azure 2025)`  
-- **Tamanho da VM:** escolhi o tipo B1s (ideal para testes e ambientes de estudo)  
-- **Autenticação:** criei usuário e senha  
+- **Nome da VM:** `lab-myVM`  
+- **Região:** selecionei `Brazil South`  
+- **Imagem:** optei por `Windows Server 2025 Datacenter: Azure Edition - x64 Gen2`  
+- **Tamanho da VM:** escolhi o tipo B1s (Standard_B1s)  
+- **Autenticação:** criei usuário e senha (labuser - ****)  
 
 ### 3. Configurações de Rede
-- Configurei IP público  
+- Configurei IP público  (Permitir portas selecionadas)
 - Adicionei regras de entrada para RDP (porta 3389)  
 
 ---
@@ -50,13 +68,12 @@ Essas imagens documentam visualmente todas as etapas realizadas e servem como ma
 ## 💡 Minhas Anotações e Dicas
 
 ### 🔧 Configurações
-- Escolha o tamanho **B1s**, uma opção de baixo custo (e elegível para uso gratuito), ideal para testes e estudos  
+- Escolhi o tamanho **B1s**, uma opção de baixo custo (e elegível para uso gratuito), ideal para testes e estudos  
 - Criei um novo **grupo de recursos** chamado `laboratorio-myVM_group`, o que facilita a organização e, principalmente, a **remoção de todos os recursos associados de forma centralizada** ao final do laboratório  
 
 ### 🔐 Segurança
-- Abra apenas as portas necessárias (no caso, a **porta 3389** para RDP)  
-- Usei **autenticação via usuário e senha**, conforme exigido pela imagem do Windows Server  
-- Recomendo restringir o acesso à porta RDP (3389) por faixa de IP sempre que possível, para aumentar a segurança da conexão  
+- Abri apenas as portas necessárias (no caso, a **porta 3389** para RDP)  
+- Usei **autenticação via usuário e senha**, conforme exigido pela imagem do Windows Server   
 
 ### 💸 Custo
 - Após finalizar o laboratório, **parei a VM** para evitar cobranças  
@@ -74,13 +91,13 @@ Essas imagens documentam visualmente todas as etapas realizadas e servem como ma
 
 ## ✅ Conclusão
 
-Realizar esse laboratório foi essencial para consolidar meu entendimento sobre a criação e configuração de máquinas virtuais no Azure. Como sou novo nesse tema, utilizei também o apoio do **ChatGPT** para tirar dúvidas, estruturar o conteúdo e organizar as etapas do processo. Isso facilitou muito meu aprendizado e me ajudou a documentar tudo com clareza.
+Realizar esse laboratório foi essencial para consolidar meu entendimento sobre a criação e configuração de máquinas virtuais no Azure. Foi tudo muito novo para mim, então utilizei o apoio do **ChatGPT** para tirar dúvidas, estruturar o conteúdo e organizar as etapas do processo. Isso facilitou muito meu aprendizado e me ajudou a documentar tudo com clareza.
 
 Estou animada para aplicar esse conhecimento em projetos reais e explorar ainda mais recursos da Azure em futuros laboratórios.
 
 ---
 
-### 🔗 Link do Repositório
+## 🔗 Link do Repositório
 
 > [https://github.com/LidianeSouza/azure-vm-lab](https://github.com/LidianeSouza/azure-vm-lab)
 
