@@ -8,7 +8,6 @@ Este repositório documenta minha experiência prática com a criação e config
 
 - Criar uma máquina virtual no Azure  
 - Configurar suas propriedades básicas (tamanho, usuário, rede, etc.)  
-- Conectar-se à VM  
 - Documentar o processo, desafios e boas práticas para fins de estudo e referência futura  
 
 ---
