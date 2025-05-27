@@ -96,9 +96,3 @@ Realizar esse laboratório foi essencial para consolidar meu entendimento sobre 
 Estou animada para aplicar esse conhecimento em projetos reais e explorar ainda mais recursos da Azure em futuros laboratórios.
 
 ---
-
-## 🔗 Link do Repositório
-
-> [https://github.com/LidianeSouza/azure-vm-lab](https://github.com/LidianeSouza/azure-vm-lab)
-
-
